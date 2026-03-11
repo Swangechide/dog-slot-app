@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.reel img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover; /* 画像を正方形に切り抜く */
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+button {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #e68900;
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-height: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+.win { color: #e91e63; }
+
+.counter-container {
+    position: fixed;   /* 画面の特定の位置に固定 */
+    bottom: 20px;      /* 下から20px */
+    right: 20px;       /* 右から20px */
+    background-color: #ffffff;
+    border: 3px solid #ff9800;
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: #333;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 5px;
+}
+
+.counter-container ul {
+    list-style: none; /* リストの「・」を消す */
+    padding: 0;
+    margin: 0;
+}
+
+.counter-container li {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #555;
+    font-family: monospace; /* 数字が揃いやすいフォント */
+    font-weight: bold;
+}
